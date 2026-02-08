@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Green Toe Textiles Computer System Survey</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #0e5225;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      width: 80%;
+      max-width: 800px;
+      margin: 30px auto;
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #1d7925;
+    }
+
+    h2 {
+      color: #1d7925;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 5px;
+      margin-top: 25px;
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      margin-top: 15px;
+      margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    .radio-group {
+      margin-top: 5px;
+      margin-bottom: 10px;
+    }
+
+    .radio-group input {
+      margin-right: 8px;
+    }
+
+    .checkbox-group input {
+      margin-right: 8px;
+    }
+
+    .submit-btn {
+      margin-top: 25px;
+      width: 100%;
+      padding: 12px;
+      font-size: 16px;
+      background-color: #2c7be5;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .submit-btn:hover {
+      background-color: #1b5fc1;
+    }
+
+    .note {
+      font-size: 16px;
+      color: #666;
+      text-align: center;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1>Green Toe Textiles – Computer System Questionnaire</h1>
+    <p>
+      Please complete this survey to help Green Toe Textiles understand current computer system issues
+      and employee needs before purchasing a new system.
+    </p>
+
+    <!-- SECTION 1 -->
+    <h2>Section 1: Employee and System Usage</h2>
+
+    <label for="department">1. What branch or department do you work in?</label>
+    <input type="text" id="department" name="department" placeholder="Enter your branch/department">
+
+    <label for="usage">2. How often do you use the computer system during your workday?</label>
+    <select id="usage" name="usage">
+      <option value="">-- Select an option --</option>
+      <option value="daily">Daily</option>
+      <option value="few_times_week">A few times per week</option>
+      <option value="rarely">Rarely</option>
+      <option value="never">Never</option>
+    </select>
+
+    <label for="experience">3. How long have you been using the current computer system?</label>
+    <select id="experience" name="experience">
+      <option value="">-- Select an option --</option>
+      <option value="less_6_months">Less than 6 months</option>
+      <option value="6_months_1_year">6 months – 1 year</option>
+      <option value="1_3_years">1–3 years</option>
+      <option value="more_3_years">More than 3 years</option>
+    </select>
+
+
+    <!-- SECTION 2 -->
+    <h2>Section 2: Performance and Problems</h2>
+
+    <label>4. How often does the current system experience technical issues (freezing, crashing, slow response)?</label>
+    <div class="radio-group">
+      <input type="radio" name="issues_frequency" value="never"> Never <br>
+      <input type="radio" name="issues_frequency" value="rarely"> Rarely <br>
+      <input type="radio" name="issues_frequency" value="sometimes"> Sometimes <br>
+      <input type="radio" name="issues_frequency" value="often"> Often <br>
+      <input type="radio" name="issues_frequency" value="very_often"> Very often <br>
+    </div>
+
+    <label for="issues_type">5. What type of technical issues do you experience most often?</label>
+    <textarea id="issues_type" name="issues_type" rows="4" placeholder="Describe the issues you experience..."></textarea>
+
+    <label for="fix_time">6. When a problem happens, how long does it usually take to be fixed?</label>
+    <select id="fix_time" name="fix_time">
+      <option value="">-- Select an option --</option>
+      <option value="less_1_hour">Less than 1 hour</option>
+      <option value="same_day">Same day</option>
+      <option value="1_2_days">1–2 days</option>
+      <option value="more_2_days">More than 2 days</option>
+    </select>
+
+    <label for="support_contact">7. Who do you contact for technical support when the system has problems?</label>
+    <select id="support_contact" name="support_contact">
+      <option value="">-- Select an option --</option>
+      <option value="it_department">IT Department</option>
+      <option value="store_manager">Store Manager</option>
+      <option value="external_technician">External Technician</option>
+      <option value="not_sure">Not sure</option>
+    </select>
+
+
+    <!-- SECTION 3 -->
+    <h2>Section 3: Equipment and Tools</h2>
+
+    <label>8. What equipment do you regularly use at work? (Select all that apply)</label>
+    <div class="checkbox-group">
+      <input type="checkbox" name="equipment" value="desktop"> Desktop Computer <br>
+      <input type="checkbox" name="equipment" value="laptop"> Laptop <br>
+      <input type="checkbox" name="equipment" value="printer"> Printer <br>
+      <input type="checkbox" name="equipment" value="scanner"> Scanner <br>
+      <input type="checkbox" name="equipment" value="other"> Other <br>
+    </div>
+
+    <label for="other_equipment">If you selected "Other", please specify:</label>
+    <input type="text" id="other_equipment" name="other_equipment" placeholder="Other equipment...">
+
+
+    <!-- SECTION 4 -->
+    <h2>Section 4: Database and Access Needs</h2>
+
+    <label for="database_users">9. Approximately how many employees at your branch need regular access to the database?</label>
+    <select id="database_users" name="database_users">
+      <option value="">-- Select an option --</option>
+      <option value="1_2">1–2</option>
+      <option value="3_5">3–5</option>
+      <option value="6_10">6–10</option>
+      <option value="more_10">More than 10</option>
+    </select>
+
+    <label>10. Are there employees who currently do not use the system but would need access in the future?</label>
+    <div class="radio-group">
+      <input type="radio" name="future_access" value="yes"> Yes <br>
+      <input type="radio" name="future_access" value="no"> No <br>
+    </div>
+
+    <label for="future_users">11. If yes, how many additional employees may need access?</label>
+    <select id="future_users" name="future_users">
+      <option value="">-- Select an option --</option>
+      <option value="1_2">1–2</option>
+      <option value="3_5">3–5</option>
+      <option value="6_10">6–10</option>
+      <option value="more_10">More than 10</option>
+    </select>
+
+
+    <!-- SECTION 5 -->
+    <h2>Section 5: Suggestions and Improvements</h2>
+
+    <label>12. Have you ever suggested an improvement to the current system?</label>
+    <div class="radio-group">
+      <input type="radio" name="suggested_before" value="yes"> Yes <br>
+      <input type="radio" name="suggested_before" value="no"> No <br>
+    </div>
+
+    <label for="suggestion_detail">13. If yes, what improvement did you suggest?</label>
+    <textarea id="suggestion_detail" name="suggestion_detail" rows="4" placeholder="Describe your suggestion..."></textarea>
+
+    <label>14. Do you feel the current computer system meets your job needs?</label>
+    <div class="radio-group">
+      <input type="radio" name="meets_needs" value="yes"> Yes <br>
+      <input type="radio" name="meets_needs" value="somewhat"> Somewhat <br>
+      <input type="radio" name="meets_needs" value="no"> No <br>
+    </div>
+
+    <label for="new_features">15. What features or improvements would you most like to see in a new computer system?</label>
+    <textarea id="new_features" name="new_features" rows="4" placeholder="Write your answer here..."></textarea>
+
+    <button class="submit-btn" type="submit">Submit Survey</button>
+
+    <p class="note">Thank you for completing this survey!</p>
+
+  </div>
+
+</body>
+</html>
